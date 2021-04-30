@@ -61,3 +61,31 @@ int main()
     printf("%0.1f %0.1f",s2,m2);
     return 0;
 }
+
+/*4*/
+#include <stdio.h>
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    if(a>b && a>c && a>d)
+    {
+    printf("%d", a);
+    }
+    else if(b>a && b>c && b>d)
+    {
+    printf("%d", b);
+    }
+    else if(c>a && c>b && c>d)
+    {
+    printf("%d", c);
+    }
+    else {
+    printf("%d",d);
+    }
+    return 0;
+}
+
