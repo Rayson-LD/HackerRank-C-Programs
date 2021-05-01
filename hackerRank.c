@@ -297,3 +297,42 @@ int main() {
     return 0;
 }
 
+/*10*/
+#include<stdio.h>
+int main() 
+{
+
+    int n;
+    int min;
+    scanf("%d", &n);
+    int len = n*2;
+    for(int i=1;i<len;i++){
+        for(int j=1;j<len;j++){
+            if(i<j)
+            {
+                min = i;
+            }
+            else {
+                min = j;
+            }
+             if(min < len-i)
+             {
+                 min = min;
+                
+             }
+             else {
+                 min = len-i;
+             }
+             if(min < len-j)
+             {
+                 min = min;
+             }
+             else {
+              min = len-j;
+             }
+            printf("%d ", n-min+1);
+        }
+        printf("\n");
+    }
+    return 0;
+}
