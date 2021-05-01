@@ -336,3 +336,24 @@ int main()
     }
     return 0;
 }
+
+/*11*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int arr[100],n,sum=0;
+int main() {
+   
+    scanf("%d",&n);
+    
+    for(int i=0;i<=n;i++)
+        scanf("%d",&arr[i]);
+   
+    for(int i=0;i<=n;i++)
+        sum = sum + arr[i];
+    printf("%d",sum);
+
+}
+
