@@ -396,3 +396,24 @@ int main() {
 printf("%s", s);
     return 0;
 }
+
+/*14*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   char input;
+int b[10]={},temp,a;
+do{
+    a = scanf("%c",&input);
+    temp = input-48;
+    if(temp<10) b[temp]++;
+}while(a>=1);
+for(temp=0;temp<10;temp++){
+    printf("%d ",*(b+temp));
+}  
+    return 0;
+}
